@@ -1,0 +1,42 @@
+{
+  "name": "github-leaderboard-api",
+  "version": "1.0.0",
+  "description": "Github Leaderboard API - Most popular users, repositories, etc.",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js"
+  },
+  "dependencies": {
+    "@octokit/core": "3.5.1",
+    "axios": "0.24.0",
+    "cheerio": "1.0.0-rc.10",
+    "dotenv": "^10.0.0",
+    "fastify": "^3.0.0-rc.1",
+    "fastify-caching": "^6.2.0",
+    "fastify-cors": "6.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  },
+  "keywords": [
+    "github leaderboard",
+    "github leaderboard api",
+    "github api",
+    "leaderboard",
+    "api"
+  ],
+  "author": {
+    "name": "Feri Irawan",
+    "url": "https://github.com/feri-irawan"
+  },
+  "homepage": "https://github.com/feri-irawan/github-leaderboard-api",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/feri-irawan/github-leaderboard-api.git"
+  },
+  "eslintConfig": {
+    "sourceType": "script"
+  }
+}
