@@ -90,7 +90,7 @@ const commitsUsers = async (location = '', by = 'commits', options = {}) => {
   }
 
   // Ignore
-  const userIgnore = ['0xrabin']
+  const userIgnore = ['0xrabin', 'JasonGhostDev']
 
   // Menyusun (informasi user belum lengkap di sini)
   users = (await Promise.all(users))
