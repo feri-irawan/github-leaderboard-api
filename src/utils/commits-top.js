@@ -2,7 +2,6 @@ const axios = require('axios')
 const cheerio = require('cheerio')
 const { scrapeUrl } = require('../constants/commits-top')
 const { makeSlug } = require('./string')
-const { endpoints } = require('../constants/commits-top')
 
 // Daftar negara
 const countries = async () => {
@@ -23,7 +22,6 @@ const countries = async () => {
       const country = {
         name,
         slug,
-        endpoints: replaceCountry(':country', slug),
       }
 
       countries.push(country)
@@ -32,20 +30,6 @@ const countries = async () => {
   // Ignore
   const countriesIgnore = ['california', 'new_york'] // Negara ini di ignore karna ada masalah pada halamannya
   return countries.filter(({ slug }) => !countriesIgnore.includes(slug))
-}
-
-// Mengganti negara
-const replaceCountry = (target, country) => {
-  const { baseUrl, routes } = endpoints
-
-  return {
-    commits: `${baseUrl}${routes.commits.replace(target, country)}`,
-    contributions: `${baseUrl}${routes.contributions.replace(target, country)}`,
-    commitsAndContributions: `${baseUrl}${routes.commitsAndContributions.replace(
-      target,
-      country,
-    )}`,
-  }
 }
 
 // Mendapatkan users dengan jumlah commit terbanyak berdasarkan negara

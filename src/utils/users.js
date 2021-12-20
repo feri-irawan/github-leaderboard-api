@@ -1,4 +1,5 @@
 const { Octokit } = require('@octokit/core')
+const { countries } = require('../constants/commits-top')
 const commitsTop = require('./commits-top')
 
 // Mencari users
@@ -80,8 +81,9 @@ const commitsUsers = async (location = '', by = 'commits', options = {}) => {
 
   if (location === '') {
     // Global
-    const ctrs = (await commitsTop.countries()).map(({ slug }) => slug)
-    users = ctrs.map(async (country) => await commitsTop.users(country, by))
+    users = countries.map(
+      async (country) => await commitsTop.users(country, by),
+    )
   } else {
     // Berdasarkan negara
     users = await commitsTop.users(location, by)
