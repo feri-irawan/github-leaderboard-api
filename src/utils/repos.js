@@ -45,7 +45,7 @@ const formatRepo = (repos) => {
       language,
       owner: {
         login: owner.login,
-        avatarUrl: owner.avatar_url,
+        avatar_url: owner.avatar_url,
         url: owner.html_url,
       },
     }),
