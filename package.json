@@ -12,7 +12,7 @@
     "axios": "0.24.0",
     "cheerio": "1.0.0-rc.10",
     "dotenv": "^10.0.0",
-    "fastify": "^3.0.0-rc.1",
+    "fastify": "^3.25.1",
     "fastify-caching": "^6.2.0",
     "fastify-cors": "6.0.2"
   },
