@@ -54,10 +54,16 @@ exports.followersByLocation = async (req, rep) => {
 // Repositories
 exports.repositories = async (req, rep) => {
   const { max_results } = req.query
-  const users = await searchUsers('repos:6000..100000 type:user', {
-    max_results: max_results ?? 30,
-    sort: 'public_repos',
-  })
+  const users = await searchUsers(
+    'repos:6000..100000 type:user',
+    {
+      max_results: max_results ?? 30,
+      sort: 'public_repos',
+    },
+    {
+      sort: 'repositories',
+    },
+  )
 
   return {
     status: 200,
@@ -69,10 +75,16 @@ exports.repositories = async (req, rep) => {
 exports.repositoriesByLocation = async (req, rep) => {
   const { location } = req.params
   const { max_results } = req.query
-  const users = await searchUsers(`repos:>1 type:user location:${location}`, {
-    max_results: max_results ?? 30,
-    sort: 'public_repos',
-  })
+  const users = await searchUsers(
+    `repos:>1 type:user location:${location}`,
+    {
+      max_results: max_results ?? 30,
+      sort: 'public_repos',
+    },
+    {
+      sort: 'repositories',
+    },
+  )
 
   return {
     status: 200,

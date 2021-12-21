@@ -3,7 +3,7 @@ const { countries } = require('../constants/commits-top')
 const commitsTop = require('./commits-top')
 
 // Mencari users
-const searchUsers = async (q, options) => {
+const searchUsers = async (q, options, octokitOptions) => {
   const octokit = new Octokit({ auth: process.env.GITHUB_PAT })
 
   // Menapatkan users
@@ -11,6 +11,7 @@ const searchUsers = async (q, options) => {
     .request('GET /search/users', {
       q,
       per_page: 100,
+      ...octokitOptions,
     })
     .then(({ data }) => data.items)
 
