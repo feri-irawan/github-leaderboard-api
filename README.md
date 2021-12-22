@@ -17,15 +17,21 @@ Untuk panduan penggunaannya kamu bisa mengunjungin [dokumentasinya](https://gith
 
 Daftar leaderboard pengguna.
 
-- followers (Leaderboard pengguna dengan jumlah pengikut terbanyak)
-- reposiotries (Leaderboard pengguna dengan jumlah repositori terbanyak)
-- commits (Leaderboard pengguna dengan jumlah commit terbanyak)
-- contributions (Leaderboard pengguna dengan jumlah kontibusi terbanyak)
+- [followers](https://github-leaderboard.vercel.app/leaderboards/users/followers) (Leaderboard pengguna dengan jumlah pengikut terbanyak)
+- [reposiotries](https://github-leaderboard.vercel.app/leaderboards/users/repositories) (Leaderboard pengguna dengan jumlah repositori terbanyak)
+- [commits](https://github-leaderboard.vercel.app/leaderboards/users/commits) (Leaderboard pengguna dengan jumlah commit terbanyak)
+- [contributions](https://github-leaderboard.vercel.app/leaderboards/users/contributions) (Leaderboard pengguna dengan jumlah kontibusi terbanyak)
 
 ## Repositories
 
 Daftar leaderboard repositori.
 
-- stars (Leaderboard repositori dengan jumlah bintang terbanyak)
-- forks (Leaderboard repositori dengan jumlah fork terbanyak)
-- size (Leaderboard repositori dengan jumlah ukuran terbesar)
+- [stars](https://github-leaderboard.vercel.app/leaderboards/repositories/stars) (Leaderboard repositori dengan jumlah bintang terbanyak)
+- [forks](https://github-leaderboard.vercel.app/leaderboards/repositories/forks) (Leaderboard repositori dengan jumlah fork terbanyak)
+- [size](https://github-leaderboard.vercel.app/leaderboards/repositories/size) (Leaderboard repositori dengan jumlah ukuran terbesar)
+
+## Topics
+
+Daftar leaderboard topik.
+
+- [repos](https://github-leaderboard.vercel.app/leaderboards/topics/repositories) (Leaderboard topic dengan jumlah repositori terbanyak)
