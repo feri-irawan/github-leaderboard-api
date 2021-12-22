@@ -1,6 +1,9 @@
 # Github Leaderboard API
 
- Data pengguna, repositori, organisasi populer yang ada di Github dan diurutkan berdasarkan jumlah dari informasi tertentu, misalnya jumlah followers, jumlah repositori, jumlah commit dan lain-lain.
+![Visitor](https://fibadge.vercel.app/badges/visitors/feri-irawan/github-leaderboard-api?color=success)
+![GitHub deployments](https://img.shields.io/github/deployments/feri-irawan/github-leaderboard-api/production?label=vercel&logo=vercel&style=for-the-badge)
+
+Data pengguna, repositori, organisasi populer yang ada di Github dan diurutkan berdasarkan jumlah dari informasi tertentu, misalnya jumlah followers, jumlah repositori, jumlah commit dan lain-lain.
 
 Dibuat dengan ❤ dan Node.js oleh [Feri Irawan](https://github.com/feri-irawan) pada Ahad, 15/12/2021, 12:30 WITA.
 
