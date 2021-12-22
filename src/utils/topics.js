@@ -13,7 +13,8 @@ const searchTopics = async (q, options, octokitOptions) => {
 
   let topics = response.map(async (topic) => {
     const repos_count = await getReposCount(topic.name)
-    return { ...topic, repos_count }
+    const html_url = `https://github.com/topics/${topic.name}`
+    return { ...topic, html_url, repos_count }
   })
 
   return (await Promise.all(topics))
