@@ -6,6 +6,7 @@ module.exports = (fastify, options, done) => {
       routes: {
         users: '/users',
         repositories: '/repos',
+        topics: '/topics',
       },
     }
   })
