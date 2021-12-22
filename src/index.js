@@ -17,6 +17,7 @@ const start = async () => {
     .register(require('./routes'))
     .register(require('./routes/repos'), { prefix: '/repos' })
     .register(require('./routes/users'), { prefix: '/users' })
+    .register(require('./routes/topics'), { prefix: '/topics' })
 
   try {
     await app.listen(process.env.PORT || 3000)
