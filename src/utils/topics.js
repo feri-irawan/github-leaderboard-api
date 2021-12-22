@@ -18,6 +18,7 @@ const searchTopics = async (q, options, octokitOptions) => {
 
   return (await Promise.all(topics))
     .sort((a, b) => b.repos_count - a.repos_count)
+    .map((topic, i) => ({ rank: i + 1, ...topic }))
     .slice(0, options.max_results)
 }
 
